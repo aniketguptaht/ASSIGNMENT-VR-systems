@@ -1,0 +1,18 @@
+Below are the steps given which I followed while completing this task:-
+
+Created a virtual env named assignment-venv in virtual-env folder using command python3 -m venv assignment-venv
+Created a Django project folder named as project using django-admin createproject project command.
+Then I created a new app “Test” using python manage.py startapp Test command also registered its app name in INSTALLED_APPS key in settings.py file.
+Then in models.py I created the resp model classes as mentioned in the task.
+After that I ran python manage.py makemigrations and python manage.py migrate command.
+After creating the tables I registered those tables in admin.py file and then created a superuser with following credentials :- username:- admin  and password :- admin
+After that I created some sample data according to the requirement.
+Then I created the url end point in urls.py file and mapped it to AvailableRoomResponse view function.
+Firstly I tackled various cases of validation of data and then made a serializer class in serializer.py file.
+When I receive all the desired input then I perform the calculation and send the data in API response
+
+Eg:- http://127.0.0.1:8000/available-rooms/?check_in=2022-12-01&check_out=2022-12-03&building=VR%20Systems
+
+Checkin and checkout date format used is YYY-MM-DD.
+
+ß
